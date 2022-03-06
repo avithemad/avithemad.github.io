@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Avinash Jayakar</title>
 </head>
@@ -16,7 +16,7 @@
 
         <div class="nav-bar">
             <button class="nav-toggle" aria-label="toggle-navigation">
-                <span class="material-icons">
+                <span class="material-icons-outlined">
                     menu
                 </span>
             </button>
@@ -41,6 +41,14 @@
                     </li>
                 </ul>
             </nav>
+            <div class="resume">
+                <span class="material-icons open-resume">
+                    <span class="material-icons-outlined">
+                        file_open
+                    </span>
+                </span>
+                <a class="resume-link" target="_blank" href="Resume_Avinash_Jayakar.pdf">Resume</a>
+            </div>
         </div>
     </header>
 
@@ -52,7 +60,7 @@
                         I am
                         <strong style="font-weight: 1000;">Avinash</strong>
                     </h1>
-                    <p class="section__subtitle section__subtitle--intro">Engineer</p>
+                    <p class="section__subtitle section__subtitle--intro">Software Engineer</p>
                 </div>
 
                 <div class="profile-picture">
@@ -62,63 +70,48 @@
             </section>
 
             <section class="my-projects" id="projects">
-                <h2 class="section__title">projects</h2>
+                <h2 class="section__title ">projects</h2>
                 <div class="projects">
                     <div class="project">
-                        <h3>3D modelling of meta carpal bone using X-Ray images</h3>
-                        <p>
-                            Researched a way to do a low cost reconstruction of Metacarpal bone using a 3D modelling
-                            open
-                            source
-                            software called Blender. Analysis was done with real data from patients. Published a paper
-                            in
-                            2018
-                            RAICS conference : https://ieeexplore.ieee.org/document/8635067
-                        </p>
+                        <div class="project-description">
+                            <a href="https://ieeexplore.ieee.org/document/8635067" target="_blank">
+                                <h3>3D modelling of meta carpal bone using multi view images</h3>
+                                <p>
+                                    A cheaper alternative modelling meta carpal bone to evaluate bone density and
+                                    diagnose if the patient has osteoperosis.
+                                </p>
+                            </a>
+                        </div>
+                        <div class="proj-img-wrapper">
+                            <a href="https://ieeexplore.ieee.org/document/8635067" target="_blank"><img class="proj-img"
+                                    src="img/project/meta-carpal.PNG" alt=""></a>
+                        </div>
                     </div>
+                    <hr>
                     <div class="project">
-                        <h3>Semantic segmentation of roads using CNNs</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus convallis
-                            egestas.
-                            Nulla
-                            facilisi. Cras dignissim urna non lacus pulvinar, ut pulvinar lectus consectetur. Duis
-                            consequat,
-                            sem at convallis consequat, ex libero pretium leo, ut scelerisque augue lectus eget sem.
-                        </p>
-                    </div>
-                    <div class="project">
-                        <h3>Web Search Engine</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus convallis
-                            egestas.
-                            Nulla
-                            facilisi. Cras dignissim urna non lacus pulvinar, ut pulvinar lectus consectetur. Duis
-                            consequat,
-                            sem at convallis consequat, ex libero pretium leo, ut scelerisque augue lectus eget sem.
-                        </p>
-                    </div>
-                    <div class="project">
-                        <h3>URL Shortner</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus convallis
-                            egestas.
-                            Nulla
-                            facilisi. Cras dignissim urna non lacus pulvinar, ut pulvinar lectus consectetur. Duis
-                            consequat,
-                            sem at convallis consequat, ex libero pretium leo, ut scelerisque augue lectus eget sem.
-                        </p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus convallis egestas.
-                        Nulla facilisi. Cras dignissim urna non lacus pulvinar, ut pulvinar lectus consectetur. Duis
-                        consequat, sem at convallis consequat, ex libero pretium leo, ut scelerisque augue lectus eget
-                        sem.
 
+
+                        <div class="project-description">
+                            <a href="https://ieeexplore.ieee.org/document/8763955" target="_blank">
+                                <h3>Semantic segmentation of roads using satellite images</h3>
+                                <p>
+                                    Developed an encoder-decoder based CNN to do semantic segmentation of roads from
+                                    satellite images, and evaluated against several other similar architectures.
+                                </p>
+                            </a>
+                        </div>
+                        <div class="proj-img-wrapper">
+                            <a href="https://ieeexplore.ieee.org/document/8763955" target="_blank"><img class="proj-img"
+                                    src="img/project/semantic-seg.png" alt=""></a>
+                        </div>
                     </div>
+
+
                 </div>
             </section>
 
             <!-- <section class="my-blogs" id="blogs">
-                <h2 class="section__title">recent blogs</h2>
+                <h2 class="section__title">blog posts</h2>
             </section>
 
             <section class="about">
