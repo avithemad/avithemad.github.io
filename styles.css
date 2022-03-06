@@ -45,12 +45,11 @@ body {
 }
 .nav__link {
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-size: 16px;
     color: rgb(92, 92, 92);
     display: inline-block;
     transition: transform 0.15s ease-out;
-    font-family: 'Arial';
 }
 .nav__link:hover {
     transform: translate(0, 3px);
@@ -96,7 +95,7 @@ body {
 }
 .site-wrapper {
     grid-column: 2 / auto;
-    margin: 32px;
+    margin: 0 32px 32px;
 }
 /* intro section */
 .intro {
@@ -104,20 +103,51 @@ body {
     grid-template-columns: auto auto;
     align-items: center;
     justify-items: center;
+    padding: 18px;
+    background-image: linear-gradient(#ffceb2, #ffe8da);
+    border-radius: 5px;
 }
 .intro__bio {
-    justify-self: left;
+    display: flex;
+    flex-direction: column;
     margin: 5px;
     animation-name: fade-in-picture;
     animation-duration: 1s;
 }
 
+.section__title {
+    text-transform: uppercase;
+    font-family: 'Arial Narrow';
+    font-weight: 100;
+    color: rgb(137, 137, 137);
+    text-align: center;
+}
 .section__title--intro {
-    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 5px;
+    font-size: 28px;
+    font-weight: 200;
+    font-family: Hubballi;
+    text-transform: none;
 }
 .section__subtitle--intro {
-    font-family: monospace;
+    font-family: Hubballi;
     font-weight: 1000;
+    margin: 5px;
+    font-size: large;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    background-color: #E2773B;
+    padding: 4px;
+    width: fit-content;
+}
+.tag-line {
+    margin: 5px;
+    font-size: 40px;
+    font-family: 'Bungee Inline';
+    line-height: 1;
+    color: #462512;
 }
 .profile-picture {
     animation-name: zoom-in-picture;
@@ -171,30 +201,6 @@ body {
     }
 }
 
-.section__title {
-    text-transform: uppercase;
-    font-family: 'Arial Narrow';
-    font-weight: 100;
-    color: rgb(137, 137, 137);
-    text-align: center;
-}
-.section__title--intro {
-    color: black;
-    margin: 5px;
-    font-size: 32px;
-    font-weight: 200;
-    text-transform: none;
-}
-.section__subtitle--intro {
-    margin: 5px;
-    font-size: large;
-    font-size: 24px;
-    font-weight: 500;
-    color: white;
-    background-color: #E2773B;
-    padding: 4px;
-    width: 100%;
-}
 
 /* Projects section */
 .my-projects {
@@ -232,6 +238,7 @@ body {
 .proj-img {
     width: 400px;
     box-shadow: 0 0 4px 1px grey;
+    border-radius: 5px;
     transition: all 0.5s ease-out;
 }
 .proj-img:hover {
@@ -343,7 +350,11 @@ footer {
         grid-row-end: 3;
     }
     .intro__bio {
-        justify-self: center;
+        text-align: center;
+    }
+    .section__subtitle--intro {
+        width: fit-content;
+        align-self: center;
     }
     .project {
         display: flex;
