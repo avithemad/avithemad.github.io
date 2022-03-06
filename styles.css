@@ -3,6 +3,7 @@ body {
     overflow-x: hidden;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
 
 }
 /* Navigation section */
@@ -34,6 +35,47 @@ body {
 .navigation {
     margin: 0 50px;
 }
+
+.navigation-mobile{
+    position: fixed;
+    /* display: none; */
+    top: 0;
+    left: 0;
+    height: 9000px;
+    box-shadow: 0 0 4px 1px grey;
+    z-index: 2000;
+    background-color: white;
+    left: -220px;
+    transition: all 0.2s ease-in;
+}
+#nav-back{
+    border: none;
+    background-color: white;
+    
+}
+#body-wrapper{
+    transition: all 0.15s ease-in;
+}
+.nav-mobile-back{
+    margin: 8px;
+    padding: 12px;
+    border-radius: 50%;
+}
+.nav-mobile-back:hover{
+    background-color: rgb(229, 229, 229);
+}
+.navigation-mobile > .navigation__items{
+    display: flexbox;
+    flex-direction: column;
+    padding: 32px 0 0px 0px ;
+   
+}
+.navigation-mobile > .navigation__items > li{
+    display: flexbox;
+    flex-direction: column;
+    padding: 12px 100px 12px 32px ;
+}
+
 .navigation__items {
     display: flex;
     margin: 0;
