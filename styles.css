@@ -117,8 +117,7 @@ body {
 
 .section__title {
     text-transform: uppercase;
-    font-family: 'Arial Narrow';
-    font-weight: 100;
+    font-weight: 500;
     color: rgb(137, 137, 137);
     text-align: center;
 }
