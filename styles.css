@@ -6,13 +6,15 @@ body {
     height: 100%;
 
 }
+
+
 /* Navigation section */
 .header {
     display: grid;
     box-shadow: 0 0 4px 1px grey;
     grid-template-columns: 1fr min(1036px, 100%) 1fr;
     gap: 10px;
-    height: 64px;
+    height: 87px;
     left: 0;
     position: fixed;
     right: 0;
@@ -23,9 +25,21 @@ body {
 .nav-bar {
     grid-column: 2 / auto;
     background: #fff;
-    height: 64px;
+    height: 87px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+}
+.help-ukraine{
+    width: 100%;
+    padding: 7px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.help-ukraine a{
+    text-decoration: none;
+    color: rgb(150, 255, 127);
 }
 
 .logo {
@@ -131,7 +145,7 @@ body {
 /* Site content start */
 
 .site-content {
-    margin-top: 64px;
+    margin-top: 87px;
     display: grid;
     grid-template-columns: 1fr min(1036px, 100%) 1fr;
 }
